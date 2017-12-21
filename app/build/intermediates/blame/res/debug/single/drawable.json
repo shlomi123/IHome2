@@ -1,0 +1,326 @@
+[
+    {
+        "merged": "C:\\Users\\User\\Desktop\\IHome2\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_seekbar_thumb_material.xml",
+        "source": "C:\\Users\\User\\.android\\build-cache\\74c7f4493e56ea349eef708798bb6d52d4b062e4\\output\\res\\drawable\\abc_seekbar_thumb_material.xml"
+    },
+    {
+        "merged": "C:\\Users\\Ilan\\Desktop\\IHome2\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_ratingbar_small_material.xml",
+        "source": "C:\\Users\\Ilan\\.android\\build-cache\\0574add53128c7ef88ec1a8bfb9b5282ccd02a78\\output\\res\\drawable\\abc_ratingbar_small_material.xml"
+    },
+    {
+        "merged": "C:\\Users\\Ilan\\Desktop\\IHome2\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_dialog_material_background_light.xml",
+        "source": "C:\\Users\\Ilan\\.android\\build-cache\\0574add53128c7ef88ec1a8bfb9b5282ccd02a78\\output\\res\\drawable\\abc_dialog_material_background_light.xml"
+    },
+    {
+        "merged": "C:\\Users\\Ilan\\Desktop\\IHome2\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_cab_background_internal_bg.xml",
+        "source": "C:\\Users\\Ilan\\.android\\build-cache\\0574add53128c7ef88ec1a8bfb9b5282ccd02a78\\output\\res\\drawable\\abc_cab_background_internal_bg.xml"
+    },
+    {
+        "merged": "C:\\Users\\Ilan\\Desktop\\IHome2\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_item_background_holo_dark.xml",
+        "source": "C:\\Users\\Ilan\\.android\\build-cache\\0574add53128c7ef88ec1a8bfb9b5282ccd02a78\\output\\res\\drawable\\abc_item_background_holo_dark.xml"
+    },
+    {
+        "merged": "C:\\Users\\User\\Desktop\\1\\IHome\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_dialog_material_background_dark.xml",
+        "source": "C:\\Users\\User\\.android\\build-cache\\74c7f4493e56ea349eef708798bb6d52d4b062e4\\output\\res\\drawable\\abc_dialog_material_background_dark.xml"
+    },
+    {
+        "merged": "C:\\Users\\User\\Desktop\\IHome2\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_spinner_textfield_background_material.xml",
+        "source": "C:\\Users\\User\\.android\\build-cache\\74c7f4493e56ea349eef708798bb6d52d4b062e4\\output\\res\\drawable\\abc_spinner_textfield_background_material.xml"
+    },
+    {
+        "merged": "C:\\Users\\User\\Desktop\\1\\IHome\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_list_selector_holo_dark.xml",
+        "source": "C:\\Users\\User\\.android\\build-cache\\74c7f4493e56ea349eef708798bb6d52d4b062e4\\output\\res\\drawable\\abc_list_selector_holo_dark.xml"
+    },
+    {
+        "merged": "C:\\Users\\User\\Desktop\\1\\IHome\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_btn_default_mtrl_shape.xml",
+        "source": "C:\\Users\\User\\.android\\build-cache\\74c7f4493e56ea349eef708798bb6d52d4b062e4\\output\\res\\drawable\\abc_btn_default_mtrl_shape.xml"
+    },
+    {
+        "merged": "C:\\Users\\User\\Desktop\\1\\IHome\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_item_background_holo_dark.xml",
+        "source": "C:\\Users\\User\\.android\\build-cache\\74c7f4493e56ea349eef708798bb6d52d4b062e4\\output\\res\\drawable\\abc_item_background_holo_dark.xml"
+    },
+    {
+        "merged": "C:\\Users\\Ilan\\Desktop\\IHome2\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_textfield_search_material.xml",
+        "source": "C:\\Users\\Ilan\\.android\\build-cache\\0574add53128c7ef88ec1a8bfb9b5282ccd02a78\\output\\res\\drawable\\abc_textfield_search_material.xml"
+    },
+    {
+        "merged": "C:\\Users\\User\\Desktop\\IHome2\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_list_selector_holo_light.xml",
+        "source": "C:\\Users\\User\\.android\\build-cache\\74c7f4493e56ea349eef708798bb6d52d4b062e4\\output\\res\\drawable\\abc_list_selector_holo_light.xml"
+    },
+    {
+        "merged": "C:\\Users\\Ilan\\Desktop\\IHome2\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_btn_colored_material.xml",
+        "source": "C:\\Users\\Ilan\\.android\\build-cache\\0574add53128c7ef88ec1a8bfb9b5282ccd02a78\\output\\res\\drawable\\abc_btn_colored_material.xml"
+    },
+    {
+        "merged": "C:\\Users\\User\\Desktop\\1\\IHome\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_textfield_search_material.xml",
+        "source": "C:\\Users\\User\\.android\\build-cache\\74c7f4493e56ea349eef708798bb6d52d4b062e4\\output\\res\\drawable\\abc_textfield_search_material.xml"
+    },
+    {
+        "merged": "C:\\Users\\User\\Desktop\\IHome2\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_list_selector_background_transition_holo_light.xml",
+        "source": "C:\\Users\\User\\.android\\build-cache\\74c7f4493e56ea349eef708798bb6d52d4b062e4\\output\\res\\drawable\\abc_list_selector_background_transition_holo_light.xml"
+    },
+    {
+        "merged": "C:\\Users\\Ilan\\Desktop\\IHome2\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_list_selector_holo_dark.xml",
+        "source": "C:\\Users\\Ilan\\.android\\build-cache\\0574add53128c7ef88ec1a8bfb9b5282ccd02a78\\output\\res\\drawable\\abc_list_selector_holo_dark.xml"
+    },
+    {
+        "merged": "C:\\Users\\User\\Desktop\\IHome2\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_edit_text_material.xml",
+        "source": "C:\\Users\\User\\.android\\build-cache\\74c7f4493e56ea349eef708798bb6d52d4b062e4\\output\\res\\drawable\\abc_edit_text_material.xml"
+    },
+    {
+        "merged": "C:\\Users\\User\\Desktop\\IHome2\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_cab_background_internal_bg.xml",
+        "source": "C:\\Users\\User\\.android\\build-cache\\74c7f4493e56ea349eef708798bb6d52d4b062e4\\output\\res\\drawable\\abc_cab_background_internal_bg.xml"
+    },
+    {
+        "merged": "C:\\Users\\User\\Desktop\\IHome2\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_ratingbar_full_material.xml",
+        "source": "C:\\Users\\User\\.android\\build-cache\\74c7f4493e56ea349eef708798bb6d52d4b062e4\\output\\res\\drawable\\abc_ratingbar_full_material.xml"
+    },
+    {
+        "merged": "C:\\Users\\Ilan\\Desktop\\IHome2\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_btn_radio_material.xml",
+        "source": "C:\\Users\\Ilan\\.android\\build-cache\\0574add53128c7ef88ec1a8bfb9b5282ccd02a78\\output\\res\\drawable\\abc_btn_radio_material.xml"
+    },
+    {
+        "merged": "C:\\Users\\User\\Desktop\\1\\IHome\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_btn_check_material.xml",
+        "source": "C:\\Users\\User\\.android\\build-cache\\74c7f4493e56ea349eef708798bb6d52d4b062e4\\output\\res\\drawable\\abc_btn_check_material.xml"
+    },
+    {
+        "merged": "C:\\Users\\User\\Desktop\\1\\IHome\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_item_background_holo_light.xml",
+        "source": "C:\\Users\\User\\.android\\build-cache\\74c7f4493e56ea349eef708798bb6d52d4b062e4\\output\\res\\drawable\\abc_item_background_holo_light.xml"
+    },
+    {
+        "merged": "C:\\Users\\Ilan\\Desktop\\IHome2\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_edit_text_material.xml",
+        "source": "C:\\Users\\Ilan\\.android\\build-cache\\0574add53128c7ef88ec1a8bfb9b5282ccd02a78\\output\\res\\drawable\\abc_edit_text_material.xml"
+    },
+    {
+        "merged": "C:\\Users\\User\\Desktop\\1\\IHome\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_text_cursor_material.xml",
+        "source": "C:\\Users\\User\\.android\\build-cache\\74c7f4493e56ea349eef708798bb6d52d4b062e4\\output\\res\\drawable\\abc_text_cursor_material.xml"
+    },
+    {
+        "merged": "C:\\Users\\User\\Desktop\\1\\IHome\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_list_selector_background_transition_holo_dark.xml",
+        "source": "C:\\Users\\User\\.android\\build-cache\\74c7f4493e56ea349eef708798bb6d52d4b062e4\\output\\res\\drawable\\abc_list_selector_background_transition_holo_dark.xml"
+    },
+    {
+        "merged": "C:\\Users\\Ilan\\Desktop\\IHome2\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_btn_check_material.xml",
+        "source": "C:\\Users\\Ilan\\.android\\build-cache\\0574add53128c7ef88ec1a8bfb9b5282ccd02a78\\output\\res\\drawable\\abc_btn_check_material.xml"
+    },
+    {
+        "merged": "C:\\Users\\Ilan\\Desktop\\IHome2\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_list_selector_background_transition_holo_dark.xml",
+        "source": "C:\\Users\\Ilan\\.android\\build-cache\\0574add53128c7ef88ec1a8bfb9b5282ccd02a78\\output\\res\\drawable\\abc_list_selector_background_transition_holo_dark.xml"
+    },
+    {
+        "merged": "C:\\Users\\User\\Desktop\\1\\IHome\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_cab_background_top_material.xml",
+        "source": "C:\\Users\\User\\.android\\build-cache\\74c7f4493e56ea349eef708798bb6d52d4b062e4\\output\\res\\drawable\\abc_cab_background_top_material.xml"
+    },
+    {
+        "merged": "C:\\Users\\Ilan\\Desktop\\IHome2\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_seekbar_thumb_material.xml",
+        "source": "C:\\Users\\Ilan\\.android\\build-cache\\0574add53128c7ef88ec1a8bfb9b5282ccd02a78\\output\\res\\drawable\\abc_seekbar_thumb_material.xml"
+    },
+    {
+        "merged": "C:\\Users\\User\\Desktop\\IHome2\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_ratingbar_small_material.xml",
+        "source": "C:\\Users\\User\\.android\\build-cache\\74c7f4493e56ea349eef708798bb6d52d4b062e4\\output\\res\\drawable\\abc_ratingbar_small_material.xml"
+    },
+    {
+        "merged": "C:\\Users\\User\\Desktop\\1\\IHome\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_ratingbar_indicator_material.xml",
+        "source": "C:\\Users\\User\\.android\\build-cache\\74c7f4493e56ea349eef708798bb6d52d4b062e4\\output\\res\\drawable\\abc_ratingbar_indicator_material.xml"
+    },
+    {
+        "merged": "C:\\Users\\User\\Desktop\\IHome2\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_dialog_material_background_light.xml",
+        "source": "C:\\Users\\User\\.android\\build-cache\\74c7f4493e56ea349eef708798bb6d52d4b062e4\\output\\res\\drawable\\abc_dialog_material_background_light.xml"
+    },
+    {
+        "merged": "C:\\Users\\Ilan\\Desktop\\IHome2\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_ratingbar_full_material.xml",
+        "source": "C:\\Users\\Ilan\\.android\\build-cache\\0574add53128c7ef88ec1a8bfb9b5282ccd02a78\\output\\res\\drawable\\abc_ratingbar_full_material.xml"
+    },
+    {
+        "merged": "C:\\Users\\User\\Desktop\\IHome2\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_list_selector_background_transition_holo_dark.xml",
+        "source": "C:\\Users\\User\\.android\\build-cache\\74c7f4493e56ea349eef708798bb6d52d4b062e4\\output\\res\\drawable\\abc_list_selector_background_transition_holo_dark.xml"
+    },
+    {
+        "merged": "C:\\Users\\User\\Desktop\\1\\IHome\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_spinner_textfield_background_material.xml",
+        "source": "C:\\Users\\User\\.android\\build-cache\\74c7f4493e56ea349eef708798bb6d52d4b062e4\\output\\res\\drawable\\abc_spinner_textfield_background_material.xml"
+    },
+    {
+        "merged": "C:\\Users\\User\\Desktop\\IHome2\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_tab_indicator_material.xml",
+        "source": "C:\\Users\\User\\.android\\build-cache\\74c7f4493e56ea349eef708798bb6d52d4b062e4\\output\\res\\drawable\\abc_tab_indicator_material.xml"
+    },
+    {
+        "merged": "C:\\Users\\Ilan\\Desktop\\IHome2\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_list_selector_holo_light.xml",
+        "source": "C:\\Users\\Ilan\\.android\\build-cache\\0574add53128c7ef88ec1a8bfb9b5282ccd02a78\\output\\res\\drawable\\abc_list_selector_holo_light.xml"
+    },
+    {
+        "merged": "C:\\Users\\User\\Desktop\\IHome2\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_text_cursor_material.xml",
+        "source": "C:\\Users\\User\\.android\\build-cache\\74c7f4493e56ea349eef708798bb6d52d4b062e4\\output\\res\\drawable\\abc_text_cursor_material.xml"
+    },
+    {
+        "merged": "C:\\Users\\Ilan\\Desktop\\IHome2\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_switch_thumb_material.xml",
+        "source": "C:\\Users\\Ilan\\.android\\build-cache\\0574add53128c7ef88ec1a8bfb9b5282ccd02a78\\output\\res\\drawable\\abc_switch_thumb_material.xml"
+    },
+    {
+        "merged": "C:\\Users\\Ilan\\Desktop\\IHome2\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_item_background_holo_light.xml",
+        "source": "C:\\Users\\Ilan\\.android\\build-cache\\0574add53128c7ef88ec1a8bfb9b5282ccd02a78\\output\\res\\drawable\\abc_item_background_holo_light.xml"
+    },
+    {
+        "merged": "C:\\Users\\User\\Desktop\\IHome2\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_item_background_holo_dark.xml",
+        "source": "C:\\Users\\User\\.android\\build-cache\\74c7f4493e56ea349eef708798bb6d52d4b062e4\\output\\res\\drawable\\abc_item_background_holo_dark.xml"
+    },
+    {
+        "merged": "C:\\Users\\User\\Desktop\\1\\IHome\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_btn_radio_material.xml",
+        "source": "C:\\Users\\User\\.android\\build-cache\\74c7f4493e56ea349eef708798bb6d52d4b062e4\\output\\res\\drawable\\abc_btn_radio_material.xml"
+    },
+    {
+        "merged": "C:\\Users\\User\\Desktop\\IHome2\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_cab_background_top_material.xml",
+        "source": "C:\\Users\\User\\.android\\build-cache\\74c7f4493e56ea349eef708798bb6d52d4b062e4\\output\\res\\drawable\\abc_cab_background_top_material.xml"
+    },
+    {
+        "merged": "C:\\Users\\User\\Desktop\\1\\IHome\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_list_selector_holo_light.xml",
+        "source": "C:\\Users\\User\\.android\\build-cache\\74c7f4493e56ea349eef708798bb6d52d4b062e4\\output\\res\\drawable\\abc_list_selector_holo_light.xml"
+    },
+    {
+        "merged": "C:\\Users\\User\\Desktop\\IHome2\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_seekbar_track_material.xml",
+        "source": "C:\\Users\\User\\.android\\build-cache\\74c7f4493e56ea349eef708798bb6d52d4b062e4\\output\\res\\drawable\\abc_seekbar_track_material.xml"
+    },
+    {
+        "merged": "C:\\Users\\User\\Desktop\\IHome2\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_switch_thumb_material.xml",
+        "source": "C:\\Users\\User\\.android\\build-cache\\74c7f4493e56ea349eef708798bb6d52d4b062e4\\output\\res\\drawable\\abc_switch_thumb_material.xml"
+    },
+    {
+        "merged": "C:\\Users\\Ilan\\Desktop\\IHome2\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_cab_background_top_material.xml",
+        "source": "C:\\Users\\Ilan\\.android\\build-cache\\0574add53128c7ef88ec1a8bfb9b5282ccd02a78\\output\\res\\drawable\\abc_cab_background_top_material.xml"
+    },
+    {
+        "merged": "C:\\Users\\User\\Desktop\\1\\IHome\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_ratingbar_full_material.xml",
+        "source": "C:\\Users\\User\\.android\\build-cache\\74c7f4493e56ea349eef708798bb6d52d4b062e4\\output\\res\\drawable\\abc_ratingbar_full_material.xml"
+    },
+    {
+        "merged": "C:\\Users\\User\\Desktop\\IHome2\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_dialog_material_background_dark.xml",
+        "source": "C:\\Users\\User\\.android\\build-cache\\74c7f4493e56ea349eef708798bb6d52d4b062e4\\output\\res\\drawable\\abc_dialog_material_background_dark.xml"
+    },
+    {
+        "merged": "C:\\Users\\Ilan\\Desktop\\IHome2\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_dialog_material_background_dark.xml",
+        "source": "C:\\Users\\Ilan\\.android\\build-cache\\0574add53128c7ef88ec1a8bfb9b5282ccd02a78\\output\\res\\drawable\\abc_dialog_material_background_dark.xml"
+    },
+    {
+        "merged": "C:\\Users\\User\\Desktop\\1\\IHome\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_list_selector_background_transition_holo_light.xml",
+        "source": "C:\\Users\\User\\.android\\build-cache\\74c7f4493e56ea349eef708798bb6d52d4b062e4\\output\\res\\drawable\\abc_list_selector_background_transition_holo_light.xml"
+    },
+    {
+        "merged": "C:\\Users\\Ilan\\Desktop\\IHome2\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_btn_borderless_material.xml",
+        "source": "C:\\Users\\Ilan\\.android\\build-cache\\0574add53128c7ef88ec1a8bfb9b5282ccd02a78\\output\\res\\drawable\\abc_btn_borderless_material.xml"
+    },
+    {
+        "merged": "C:\\Users\\User\\Desktop\\1\\IHome\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_cab_background_internal_bg.xml",
+        "source": "C:\\Users\\User\\.android\\build-cache\\74c7f4493e56ea349eef708798bb6d52d4b062e4\\output\\res\\drawable\\abc_cab_background_internal_bg.xml"
+    },
+    {
+        "merged": "C:\\Users\\User\\Desktop\\1\\IHome\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_edit_text_material.xml",
+        "source": "C:\\Users\\User\\.android\\build-cache\\74c7f4493e56ea349eef708798bb6d52d4b062e4\\output\\res\\drawable\\abc_edit_text_material.xml"
+    },
+    {
+        "merged": "C:\\Users\\User\\Desktop\\IHome2\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_btn_default_mtrl_shape.xml",
+        "source": "C:\\Users\\User\\.android\\build-cache\\74c7f4493e56ea349eef708798bb6d52d4b062e4\\output\\res\\drawable\\abc_btn_default_mtrl_shape.xml"
+    },
+    {
+        "merged": "C:\\Users\\User\\Desktop\\1\\IHome\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_seekbar_thumb_material.xml",
+        "source": "C:\\Users\\User\\.android\\build-cache\\74c7f4493e56ea349eef708798bb6d52d4b062e4\\output\\res\\drawable\\abc_seekbar_thumb_material.xml"
+    },
+    {
+        "merged": "C:\\Users\\Ilan\\Desktop\\IHome2\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_btn_default_mtrl_shape.xml",
+        "source": "C:\\Users\\Ilan\\.android\\build-cache\\0574add53128c7ef88ec1a8bfb9b5282ccd02a78\\output\\res\\drawable\\abc_btn_default_mtrl_shape.xml"
+    },
+    {
+        "merged": "C:\\Users\\User\\Desktop\\IHome2\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_list_selector_holo_dark.xml",
+        "source": "C:\\Users\\User\\.android\\build-cache\\74c7f4493e56ea349eef708798bb6d52d4b062e4\\output\\res\\drawable\\abc_list_selector_holo_dark.xml"
+    },
+    {
+        "merged": "C:\\Users\\User\\Desktop\\IHome2\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_item_background_holo_light.xml",
+        "source": "C:\\Users\\User\\.android\\build-cache\\74c7f4493e56ea349eef708798bb6d52d4b062e4\\output\\res\\drawable\\abc_item_background_holo_light.xml"
+    },
+    {
+        "merged": "C:\\Users\\User\\Desktop\\1\\IHome\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\round_button.xml",
+        "source": "C:\\Users\\User\\Desktop\\1\\IHome\\app\\src\\main\\res\\drawable\\round_button.xml"
+    },
+    {
+        "merged": "C:\\Users\\User\\Desktop\\IHome2\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_btn_borderless_material.xml",
+        "source": "C:\\Users\\User\\.android\\build-cache\\74c7f4493e56ea349eef708798bb6d52d4b062e4\\output\\res\\drawable\\abc_btn_borderless_material.xml"
+    },
+    {
+        "merged": "C:\\Users\\User\\Desktop\\IHome2\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_btn_check_material.xml",
+        "source": "C:\\Users\\User\\.android\\build-cache\\74c7f4493e56ea349eef708798bb6d52d4b062e4\\output\\res\\drawable\\abc_btn_check_material.xml"
+    },
+    {
+        "merged": "C:\\Users\\Ilan\\Desktop\\IHome2\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\ic_signal_wifi_4_bar_lock_white_18dp.png",
+        "source": "C:\\Users\\Ilan\\Desktop\\IHome2\\app\\src\\main\\res\\drawable\\ic_signal_wifi_4_bar_lock_white_18dp.png"
+    },
+    {
+        "merged": "C:\\Users\\User\\Desktop\\IHome2\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_textfield_search_material.xml",
+        "source": "C:\\Users\\User\\.android\\build-cache\\74c7f4493e56ea349eef708798bb6d52d4b062e4\\output\\res\\drawable\\abc_textfield_search_material.xml"
+    },
+    {
+        "merged": "C:\\Users\\User\\Desktop\\1\\IHome\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_dialog_material_background_light.xml",
+        "source": "C:\\Users\\User\\.android\\build-cache\\74c7f4493e56ea349eef708798bb6d52d4b062e4\\output\\res\\drawable\\abc_dialog_material_background_light.xml"
+    },
+    {
+        "merged": "C:\\Users\\User\\Desktop\\IHome2\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\ic_signal_wifi_4_bar_lock_white_18dp.png",
+        "source": "C:\\Users\\User\\Desktop\\IHome2\\app\\src\\main\\res\\drawable\\ic_signal_wifi_4_bar_lock_white_18dp.png"
+    },
+    {
+        "merged": "C:\\Users\\User\\Desktop\\1\\IHome\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_btn_borderless_material.xml",
+        "source": "C:\\Users\\User\\.android\\build-cache\\74c7f4493e56ea349eef708798bb6d52d4b062e4\\output\\res\\drawable\\abc_btn_borderless_material.xml"
+    },
+    {
+        "merged": "C:\\Users\\User\\Desktop\\1\\IHome\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_tab_indicator_material.xml",
+        "source": "C:\\Users\\User\\.android\\build-cache\\74c7f4493e56ea349eef708798bb6d52d4b062e4\\output\\res\\drawable\\abc_tab_indicator_material.xml"
+    },
+    {
+        "merged": "C:\\Users\\Ilan\\Desktop\\IHome2\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_list_selector_background_transition_holo_light.xml",
+        "source": "C:\\Users\\Ilan\\.android\\build-cache\\0574add53128c7ef88ec1a8bfb9b5282ccd02a78\\output\\res\\drawable\\abc_list_selector_background_transition_holo_light.xml"
+    },
+    {
+        "merged": "C:\\Users\\User\\Desktop\\IHome2\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_btn_colored_material.xml",
+        "source": "C:\\Users\\User\\.android\\build-cache\\74c7f4493e56ea349eef708798bb6d52d4b062e4\\output\\res\\drawable\\abc_btn_colored_material.xml"
+    },
+    {
+        "merged": "C:\\Users\\User\\Desktop\\IHome2\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_ratingbar_indicator_material.xml",
+        "source": "C:\\Users\\User\\.android\\build-cache\\74c7f4493e56ea349eef708798bb6d52d4b062e4\\output\\res\\drawable\\abc_ratingbar_indicator_material.xml"
+    },
+    {
+        "merged": "C:\\Users\\User\\Desktop\\1\\IHome\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_ratingbar_small_material.xml",
+        "source": "C:\\Users\\User\\.android\\build-cache\\74c7f4493e56ea349eef708798bb6d52d4b062e4\\output\\res\\drawable\\abc_ratingbar_small_material.xml"
+    },
+    {
+        "merged": "C:\\Users\\Ilan\\Desktop\\IHome2\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_tab_indicator_material.xml",
+        "source": "C:\\Users\\Ilan\\.android\\build-cache\\0574add53128c7ef88ec1a8bfb9b5282ccd02a78\\output\\res\\drawable\\abc_tab_indicator_material.xml"
+    },
+    {
+        "merged": "C:\\Users\\User\\Desktop\\1\\IHome\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_seekbar_track_material.xml",
+        "source": "C:\\Users\\User\\.android\\build-cache\\74c7f4493e56ea349eef708798bb6d52d4b062e4\\output\\res\\drawable\\abc_seekbar_track_material.xml"
+    },
+    {
+        "merged": "C:\\Users\\Ilan\\Desktop\\IHome2\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_ratingbar_indicator_material.xml",
+        "source": "C:\\Users\\Ilan\\.android\\build-cache\\0574add53128c7ef88ec1a8bfb9b5282ccd02a78\\output\\res\\drawable\\abc_ratingbar_indicator_material.xml"
+    },
+    {
+        "merged": "C:\\Users\\Ilan\\Desktop\\IHome2\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_text_cursor_material.xml",
+        "source": "C:\\Users\\Ilan\\.android\\build-cache\\0574add53128c7ef88ec1a8bfb9b5282ccd02a78\\output\\res\\drawable\\abc_text_cursor_material.xml"
+    },
+    {
+        "merged": "C:\\Users\\Ilan\\Desktop\\IHome2\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_spinner_textfield_background_material.xml",
+        "source": "C:\\Users\\Ilan\\.android\\build-cache\\0574add53128c7ef88ec1a8bfb9b5282ccd02a78\\output\\res\\drawable\\abc_spinner_textfield_background_material.xml"
+    },
+    {
+        "merged": "C:\\Users\\Ilan\\Desktop\\IHome2\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_seekbar_track_material.xml",
+        "source": "C:\\Users\\Ilan\\.android\\build-cache\\0574add53128c7ef88ec1a8bfb9b5282ccd02a78\\output\\res\\drawable\\abc_seekbar_track_material.xml"
+    },
+    {
+        "merged": "C:\\Users\\User\\Desktop\\1\\IHome\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_switch_thumb_material.xml",
+        "source": "C:\\Users\\User\\.android\\build-cache\\74c7f4493e56ea349eef708798bb6d52d4b062e4\\output\\res\\drawable\\abc_switch_thumb_material.xml"
+    },
+    {
+        "merged": "C:\\Users\\User\\Desktop\\IHome2\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_btn_radio_material.xml",
+        "source": "C:\\Users\\User\\.android\\build-cache\\74c7f4493e56ea349eef708798bb6d52d4b062e4\\output\\res\\drawable\\abc_btn_radio_material.xml"
+    },
+    {
+        "merged": "C:\\Users\\User\\Desktop\\1\\IHome\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_btn_colored_material.xml",
+        "source": "C:\\Users\\User\\.android\\build-cache\\74c7f4493e56ea349eef708798bb6d52d4b062e4\\output\\res\\drawable\\abc_btn_colored_material.xml"
+    }
+]

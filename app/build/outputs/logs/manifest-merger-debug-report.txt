@@ -1,0 +1,93 @@
+-- Merging decision tree log ---
+manifest
+ADDED from C:\Users\User\Desktop\1\IHome\app\src\main\AndroidManifest.xml:2:1-29:12
+	package
+		ADDED from C:\Users\User\Desktop\1\IHome\app\src\main\AndroidManifest.xml:3:5-45
+		INJECTED from C:\Users\User\Desktop\1\IHome\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\User\Desktop\1\IHome\app\src\main\AndroidManifest.xml
+	android:versionName
+		INJECTED from C:\Users\User\Desktop\1\IHome\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\User\Desktop\1\IHome\app\src\main\AndroidManifest.xml
+	xmlns:android
+		ADDED from C:\Users\User\Desktop\1\IHome\app\src\main\AndroidManifest.xml:2:11-69
+	android:versionCode
+		INJECTED from C:\Users\User\Desktop\1\IHome\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\User\Desktop\1\IHome\app\src\main\AndroidManifest.xml
+uses-permission#android.permission.INTERNET
+ADDED from C:\Users\User\Desktop\1\IHome\app\src\main\AndroidManifest.xml:5:5-67
+	android:name
+		ADDED from C:\Users\User\Desktop\1\IHome\app\src\main\AndroidManifest.xml:5:22-64
+uses-permission#android.permission.ACCESS_WIFI_STATE
+ADDED from C:\Users\User\Desktop\1\IHome\app\src\main\AndroidManifest.xml:6:5-76
+	android:name
+		ADDED from C:\Users\User\Desktop\1\IHome\app\src\main\AndroidManifest.xml:6:22-73
+uses-permission#android.permission.ACCESS_NETWORK_STATE
+ADDED from C:\Users\User\Desktop\1\IHome\app\src\main\AndroidManifest.xml:7:5-79
+	android:name
+		ADDED from C:\Users\User\Desktop\1\IHome\app\src\main\AndroidManifest.xml:7:22-76
+uses-permission#android.permission.ACCESS_FINE_LOCATION
+ADDED from C:\Users\User\Desktop\1\IHome\app\src\main\AndroidManifest.xml:8:5-79
+	android:name
+		ADDED from C:\Users\User\Desktop\1\IHome\app\src\main\AndroidManifest.xml:8:22-76
+application
+ADDED from C:\Users\User\Desktop\1\IHome\app\src\main\AndroidManifest.xml:10:5-27:19
+MERGED from [com.android.support:appcompat-v7:23.4.0] C:\Users\User\.android\build-cache\74c7f4493e56ea349eef708798bb6d52d4b062e4\output\AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:animated-vector-drawable:23.4.0] C:\Users\User\.android\build-cache\5ba9117ec555bab24d0e6f1ca53c4384b10ca72e\output\AndroidManifest.xml:7:5-20
+MERGED from [com.android.support:support-vector-drawable:23.4.0] C:\Users\User\.android\build-cache\bcc1a8361e0e0d919cb3c114b0ff12b963a4b93c\output\AndroidManifest.xml:7:5-20
+MERGED from [com.android.support:support-v4:23.4.0] C:\Users\User\.android\build-cache\4a830d042fa6dc747c904ec830156b275387b877\output\AndroidManifest.xml:22:5-20
+MERGED from [com.android.support.constraint:constraint-layout:1.0.2] C:\Users\User\.android\build-cache\3bb426b74d4c34ef26a1f8c942f85a1dc20e8fa7\output\AndroidManifest.xml:9:5-20
+	android:label
+		ADDED from C:\Users\User\Desktop\1\IHome\app\src\main\AndroidManifest.xml:13:9-41
+	android:supportsRtl
+		ADDED from C:\Users\User\Desktop\1\IHome\app\src\main\AndroidManifest.xml:14:9-35
+	android:allowBackup
+		ADDED from C:\Users\User\Desktop\1\IHome\app\src\main\AndroidManifest.xml:11:9-35
+	android:icon
+		ADDED from C:\Users\User\Desktop\1\IHome\app\src\main\AndroidManifest.xml:12:9-43
+	android:theme
+		ADDED from C:\Users\User\Desktop\1\IHome\app\src\main\AndroidManifest.xml:15:9-40
+activity#com.myapplication.shlomi.ihome.ConnectToRasp
+ADDED from C:\Users\User\Desktop\1\IHome\app\src\main\AndroidManifest.xml:16:9-22:20
+	android:name
+		ADDED from C:\Users\User\Desktop\1\IHome\app\src\main\AndroidManifest.xml:16:19-48
+intent-filter#android.intent.action.MAIN+android.intent.category.LAUNCHER
+ADDED from C:\Users\User\Desktop\1\IHome\app\src\main\AndroidManifest.xml:17:13-21:29
+action#android.intent.action.MAIN
+ADDED from C:\Users\User\Desktop\1\IHome\app\src\main\AndroidManifest.xml:18:17-69
+	android:name
+		ADDED from C:\Users\User\Desktop\1\IHome\app\src\main\AndroidManifest.xml:18:25-66
+category#android.intent.category.LAUNCHER
+ADDED from C:\Users\User\Desktop\1\IHome\app\src\main\AndroidManifest.xml:20:17-77
+	android:name
+		ADDED from C:\Users\User\Desktop\1\IHome\app\src\main\AndroidManifest.xml:20:27-74
+activity#com.myapplication.shlomi.ihome.wifiConfig
+ADDED from C:\Users\User\Desktop\1\IHome\app\src\main\AndroidManifest.xml:23:9-48
+	android:name
+		ADDED from C:\Users\User\Desktop\1\IHome\app\src\main\AndroidManifest.xml:23:19-45
+activity#com.myapplication.shlomi.ihome.LogIn
+ADDED from C:\Users\User\Desktop\1\IHome\app\src\main\AndroidManifest.xml:24:9-43
+	android:name
+		ADDED from C:\Users\User\Desktop\1\IHome\app\src\main\AndroidManifest.xml:24:19-40
+activity#com.myapplication.shlomi.ihome.Register
+ADDED from C:\Users\User\Desktop\1\IHome\app\src\main\AndroidManifest.xml:25:9-46
+	android:name
+		ADDED from C:\Users\User\Desktop\1\IHome\app\src\main\AndroidManifest.xml:25:19-43
+activity#com.myapplication.shlomi.ihome.Upload
+ADDED from C:\Users\User\Desktop\1\IHome\app\src\main\AndroidManifest.xml:26:9-53
+	android:name
+		ADDED from C:\Users\User\Desktop\1\IHome\app\src\main\AndroidManifest.xml:26:19-41
+uses-sdk
+INJECTED from C:\Users\User\Desktop\1\IHome\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
+MERGED from [com.android.support:appcompat-v7:23.4.0] C:\Users\User\.android\build-cache\74c7f4493e56ea349eef708798bb6d52d4b062e4\output\AndroidManifest.xml:21:5-23:78
+MERGED from [com.android.support:animated-vector-drawable:23.4.0] C:\Users\User\.android\build-cache\5ba9117ec555bab24d0e6f1ca53c4384b10ca72e\output\AndroidManifest.xml:5:5-44
+MERGED from [com.android.support:support-vector-drawable:23.4.0] C:\Users\User\.android\build-cache\bcc1a8361e0e0d919cb3c114b0ff12b963a4b93c\output\AndroidManifest.xml:5:5-43
+MERGED from [com.android.support:support-v4:23.4.0] C:\Users\User\.android\build-cache\4a830d042fa6dc747c904ec830156b275387b877\output\AndroidManifest.xml:20:5-43
+MERGED from [com.android.support.constraint:constraint-layout:1.0.2] C:\Users\User\.android\build-cache\3bb426b74d4c34ef26a1f8c942f85a1dc20e8fa7\output\AndroidManifest.xml:5:5-7:41
+	tools:overrideLibrary
+		ADDED from [com.android.support:appcompat-v7:23.4.0] C:\Users\User\.android\build-cache\74c7f4493e56ea349eef708798bb6d52d4b062e4\output\AndroidManifest.xml:23:9-75
+	android:targetSdkVersion
+		INJECTED from C:\Users\User\Desktop\1\IHome\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\User\Desktop\1\IHome\app\src\main\AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from C:\Users\User\Desktop\1\IHome\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\User\Desktop\1\IHome\app\src\main\AndroidManifest.xml
