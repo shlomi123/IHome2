@@ -1,4 +1,11 @@
 <resources>
     <string name="app_name">IHome</string>
     <string name="wifiSSID">iHome</string>
+    <string name="logInTitle">Log in</string>
+    <string name="hint_username">User name</string>
+    <string name="hint_password">Password</string>
+    <string name="hint_code">Code</string>
+    <string name="code">abcd</string>
+    <string name="error_wrongCode">Error: Wrong code</string>
+
 </resources>

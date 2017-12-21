@@ -24,13 +24,13 @@ public class wifiConfig extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_wifi_config);
 
-        Button button= (Button) findViewById(R.id.Next2);
-        button.setOnClickListener(new View.OnClickListener() {
+        Button next = (Button) findViewById(R.id.btnNext);
+        next.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                EditText name = (EditText) findViewById(R.id.wifiNameEdit);
+                EditText name = (EditText) findViewById(R.id.NameEdit);
 
-                EditText pass = (EditText) findViewById(R.id.wifiPasswordEdit);
+                EditText pass = (EditText) findViewById(R.id.PasswordEdit);
 
                 String msg = name.getText().toString() + ", " + pass.getText().toString(); // get username and password
 
@@ -42,11 +42,15 @@ public class wifiConfig extends AppCompatActivity {
                 toast.show();
 
                 Intent myIntent = new Intent(wifiConfig.this,
-                        MainPage.class);
+                        LogIn.class);
                 startActivity(myIntent);
             }
         });
     }
+
+    /*void sendMessage(String msg){
+
+    }*/
 
     class myTask extends AsyncTask<String,Void,Void>{
         @Override
@@ -54,7 +58,7 @@ public class wifiConfig extends AppCompatActivity {
             try{
                 soc = new Socket(ip, 8200); // open socket and send message
                 writer = new PrintWriter(soc.getOutputStream());
-                writer.write(params[0]);
+                writer.write(params[00]);
                 writer.flush();
                 writer.close();
                 soc.close();

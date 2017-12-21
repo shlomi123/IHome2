@@ -12,7 +12,6 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.Toast;
 
-//activity that checks your wifi connection
 public class ConnectToRasp extends AppCompatActivity {
 
     @Override
@@ -23,12 +22,11 @@ public class ConnectToRasp extends AppCompatActivity {
         Button button= (Button) findViewById(R.id.Next);
         button.setOnClickListener(new View.OnClickListener() {
             @Override
-            //on "next" button click
             public void onClick(View v) {
                 String wifiName = getWifiName(getApplicationContext());
 
                 if(wifiName != null) {
-                    if (wifiName.compareTo("\"HOTBOX-0984\"") == 0) {
+                    if (wifiName.compareTo(getString(R.string.wifiSSID)) == 0) {
                         Intent myIntent = new Intent(ConnectToRasp.this,
                                 wifiConfig.class);
                         startActivity(myIntent);
@@ -55,7 +53,7 @@ public class ConnectToRasp extends AppCompatActivity {
                 if (state == NetworkInfo.DetailedState.CONNECTED || state == NetworkInfo.DetailedState.OBTAINING_IPADDR) {
                     return wifiInfo.getSSID();
                 }
-            }
+            } //TODO WHAT HAPPENDS IF THERE ARE SERVERAL IDENTICAL WIFI NAMES
         }
         return null;
     }

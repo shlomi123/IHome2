@@ -28,7 +28,7 @@
         android:inputType="textPersonName"
         android:hint="Wifi Name"
         android:ems="10"
-        android:id="@+id/wifiNameEdit"
+        android:id="@+id/NameEdit"
         android:layout_centerVertical="true"
         android:layout_centerHorizontal="true" />
 
@@ -37,8 +37,8 @@
         android:layout_height="wrap_content"
         android:inputType="textPassword"
         android:ems="10"
-        android:id="@+id/wifiPasswordEdit"
-        android:layout_below="@+id/wifiNameEdit"
+        android:id="@+id/PasswordEdit"
+        android:layout_below="@+id/NameEdit"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="64dp"
         android:hint="Wifi Password" />
@@ -57,7 +57,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Next"
-        android:id="@+id/Next2"
+        android:id="@+id/btnNext"
         android:layout_marginBottom="40dp"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"/>
