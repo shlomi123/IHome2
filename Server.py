@@ -7,15 +7,17 @@ def parseCommandAndHandle(command, client_soc):
    isOk = False      ## Will return true if process finished with success
    messageCode = command[0:3]  
            
-    ##  [0] - Protocol code, [1] - Username, [2] - Password, [3] - code  
+     
    parsedCommand = command.split('@@')
-    
+   
+   ##  [0] - Protocol code, [1] - Username, [2] - Password, [3] - code 
    if messageCode == '101':     ## If Login
        isOk = handleLogin(parsedCommand[1], parsedCommand[2])
    elif messageCode == '102':     ## If Register
        isOk = handleRegister(parsedCommand[1], parsedCommand[2], parsedCommand[3])
+   ##  [0] - Protocol code, [1] - file names
    elif messageCode == '103':     ## If upload files
-        isOk = handleUpload(client_soc)
+        isOk = handleUpload(client_soc, parsedCommand[1])
         return isOk
    
         
@@ -61,16 +63,22 @@ def handleLogin(username, password):
     print('Wrong username or password')
     return False
 
-def handleUpload(client_soc):
-    file = open('testFile', 'wb')
-    while True:
-       data = client_soc.recv(1024)
-       print(data)
-       if not data: break
-       file.write(data)    
-       print('Writing file')
-       
-    file.close()
+def handleUpload(client_soc, fileNames):
+    parsedFileNames = fileNames.split('&&')
+    print(parsedFileNames)
+    returnCode = '200'
+    
+    for fileName in parsedFileNames:
+        file = open(fileName, 'wb')
+        while True:
+           data = client_soc.recv(1024)
+           print(data)
+           if not data: break
+           file.write(data)    
+           print('Writing file')           
+           
+        client_soc.send(returnCode.encode())   
+        file.close()
        
     return True
     
