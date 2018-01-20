@@ -3,15 +3,21 @@ import os
 import sqlite3
 
 ## Parses the command we got from client and sends it to the handeling function
-def parseCommandAndHandle(command):
+def parseCommandAndHandle(command, client_soc):
    isOk = False      ## Will return true if process finished with success
-   parsedCommand = command.split('@@')    
-    ##  [0] - Protocol code, [1] - Username, [2] - Password, [3] - code
-   if parsedCommand[0] == '101':     ## If Login
+   messageCode = command[0:3]  
+           
+    ##  [0] - Protocol code, [1] - Username, [2] - Password, [3] - code  
+   parsedCommand = command.split('@@')
+    
+   if messageCode == '101':     ## If Login
        isOk = handleLogin(parsedCommand[1], parsedCommand[2])
-   elif parsedCommand[0] == '102':     ## If Register
+   elif messageCode == '102':     ## If Register
        isOk = handleRegister(parsedCommand[1], parsedCommand[2], parsedCommand[3])
-        
+   elif messageCode == '103':     ## If upload files
+        isOk = handleUpload(client_soc)
+        return isOk
+   
         
    return isOk
         
@@ -54,6 +60,19 @@ def handleLogin(username, password):
     
     print('Wrong username or password')
     return False
+
+def handleUpload(client_soc):
+    file = open('testFile', 'wb')
+    while True:
+       data = client_soc.recv(1024)
+       print(data)
+       if not data: break
+       file.write(data)    
+       print('Writing file')
+       
+    file.close()
+       
+    return True
     
 def main():
     serv_soc = socket.socket()
@@ -67,7 +86,7 @@ def main():
         
         command = client_soc.recv(1024).decode('UTF-8')
         print(command)
-        isOk = parseCommandAndHandle(command)
+        isOk = parseCommandAndHandle(command, client_soc)
         
         ## Return isOK to app
         
