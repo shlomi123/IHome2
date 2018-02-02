@@ -1,5 +1,6 @@
 import sqlite3
 from IHome2.Protocols import Protocols
+import os
 
 
 class Handler:
@@ -23,6 +24,14 @@ class Handler:
         #  [0] - Protocol code, [1] - file names
         elif messageCode == Protocols.UPLOAD:  ## If upload files
             self.handleUpload(parsedCommand[1])
+
+        #  [0] - Protocol code
+        elif messageCode == Protocols.SEND_FILES:  ## If send files
+            self.handleSendFiles()
+
+        #  [0] - Protocol code, [1] - file name
+        elif messageCode == Protocols.DOWNLOAD:  ## If download files
+            self.handleDownload(parsedCommand[1])
 
     def handleRegister(self, username, password, code):
         if code != ('abcd'):  # If code doesn't match
@@ -67,22 +76,70 @@ class Handler:
         return
 
     def handleUpload(self, fileNames):
+        counter = 1
         parsedFileNames = fileNames.split('&&')
         print (parsedFileNames)
         self.soc.send(Protocols.GOOD.encode())  # approve that file names were received
 
-        data = self.soc.recv(1024)
-        print(data)
-        """for fileName in parsedFileNames:
-            #file = open(fileName, 'wb')
-            print ("in first loop")
+        # start receiving files from client
+        self.soc.settimeout(5)
+        for fileName in parsedFileNames:
+            file = open("files\\" + fileName, 'wb')
+            print ("in loop " + str(counter))
+            counter = counter + 1
+
             while True:
-               data = self.soc.recv(1024)
-               print(data)
-               if not data: break
-               #file.write(data)
+                try:
+                    data = self.soc.recv(1024)
+                    print (data)
+                    code = data[-3:]
+                    print (code)
+                    if code == b'200':
+                        data = data[0:-3]
+                        file.write(data)
+                        print ("end")
+                        self.soc.send(Protocols.GOOD.encode())
+                        break
 
-            #file.close()
+                    file.write(data)
+                except Exception as e:
+                    print (e)
+                    break
 
+            file.close()
+
+        print ("out of loops")
         self.soc.send(Protocols.GOOD.encode())  # approve that files were received"""
+        return
+
+    def handleSendFiles(self):
+        names = Protocols.GOOD + "&&"
+        for i in os.listdir("files\\"):
+            names = names + i + "&&"
+        names = names[0:-2]
+        print (names)
+        self.soc.send(names.encode())
+
+        return
+
+    def handleDownload(self, fileName):
+        self.soc.send(Protocols.GOOD.encode())
+        print(fileName)
+        ans = self.soc.recv(1024).decode('UTF-8')
+        # TODO finish sending file to client
+        try:
+            if ans == "200":
+                file = open("files\\" + fileName, 'rb')
+
+                bytes = file.read(1024)
+                while (bytes):
+                    print(bytes)
+                    self.soc.send(bytes)
+                    bytes = file.read(1024)
+                self.soc.send(Protocols.GOOD.encode())
+            else:
+                print("client didn't confirm")
+        except Exception as e:
+            print (e)
+
         return
