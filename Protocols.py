@@ -3,6 +3,8 @@ class Protocols:
     LOG_IN = "101"
     REGISTER = "102"
     UPLOAD = "103"
+    SEND_FILES = "104"
+    DOWNLOAD = "105"
     GOOD = "200"
     WRONG_CODE = "1020"
     USERNAME_EXISTS = "1021"

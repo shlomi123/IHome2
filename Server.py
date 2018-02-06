@@ -12,19 +12,19 @@ def main():
         try:
             print('Listening...')
             client_soc, client_address = serv_soc.accept()
-            print('Received connection from client')
+            print('Received connection from client: ' + str(client_address))
 
             command = client_soc.recv(1024).decode('UTF-8')
             handler = Handler(client_soc)
             handler.parseCommandAndHandle(command)
 
             client_soc.close()
-        except:
-            print ("Error")
+        except Exception as e:
+            print(e)
             break
         
     serv_soc.close()
-    
+
+
 if __name__=='__main__':
     main()
-    

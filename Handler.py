@@ -1,6 +1,7 @@
 import sqlite3
 from IHome2.Protocols import Protocols
 import os
+import socket
 
 
 class Handler:
@@ -14,24 +15,28 @@ class Handler:
         parsedCommand = command.split('@@')
 
         #  [0] - Protocol code, [1] - Username, [2] - Password
-        if messageCode == Protocols.LOG_IN:  ## If Login
+        if messageCode == Protocols.LOG_IN:
             self.handleLogin(parsedCommand[1], parsedCommand[2])
 
         #  [0] - Protocol code, [1] - Username, [2] - Password, [3] - code
-        elif messageCode == Protocols.REGISTER:  ## If Register
+        elif messageCode == Protocols.REGISTER:
             self.handleRegister(parsedCommand[1], parsedCommand[2], parsedCommand[3])
 
         #  [0] - Protocol code, [1] - file names
-        elif messageCode == Protocols.UPLOAD:  ## If upload files
+        elif messageCode == Protocols.UPLOAD:
             self.handleUpload(parsedCommand[1])
 
         #  [0] - Protocol code
-        elif messageCode == Protocols.SEND_FILES:  ## If send files
-            self.handleSendFiles()
+        elif messageCode == Protocols.SEND_FILES:
+            self.handleSendFileNames()
 
         #  [0] - Protocol code, [1] - file name
-        elif messageCode == Protocols.DOWNLOAD:  ## If download files
+        elif messageCode == Protocols.DOWNLOAD:
             self.handleDownload(parsedCommand[1])
+
+        #  [0] - Protocol code, [1] - wifi name, [2] - wifi password
+        elif messageCode == Protocols.WIFI_CONFIG:
+            self.handleWifiConfig()
 
     def handleRegister(self, username, password, code):
         if code != ('abcd'):  # If code doesn't match
@@ -112,7 +117,7 @@ class Handler:
         self.soc.send(Protocols.GOOD.encode())  # approve that files were received"""
         return
 
-    def handleSendFiles(self):
+    def handleSendFileNames(self):
         names = Protocols.GOOD + "&&"
         for i in os.listdir("files\\"):
             names = names + i + "&&"
@@ -129,17 +134,26 @@ class Handler:
         # TODO finish sending file to client
         try:
             if ans == "200":
+                print(ans)
                 file = open("files\\" + fileName, 'rb')
 
                 bytes = file.read(1024)
                 while (bytes):
-                    print(bytes)
                     self.soc.send(bytes)
                     bytes = file.read(1024)
-                self.soc.send(Protocols.GOOD.encode())
+                    print(bytes)
+                file.close()
             else:
                 print("client didn't confirm")
         except Exception as e:
+            file.close()
             print (e)
 
+        return
+
+    def handleWifiConfig(self):
+        hostname = socket.gethostname()
+        ip = socket.gethostbyname(hostname)
+
+        self.soc.send(str(ip).encode())
         return
