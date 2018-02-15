@@ -1,10 +1,10 @@
-import sqlite3
+import _thread
 import os
 from IHome2.Protocols import Protocols
 from IHome2.DBHandler import DBHandler
 
 
-class Handler:
+class Handler():
     def __init__(self, client_soc):
         self.soc = client_soc
 
@@ -48,15 +48,19 @@ class Handler:
         if DBHandler.register(username, password) is True:
             self.soc.send(Protocols.GOOD.encode())
             DBHandler.log(username, Protocols.ACTION_SIGNUP, username + Protocols.CONTENT_SIGNUP)
+            self.soc.close()
         else:
             self.soc.send(Protocols.USERNAME_EXISTS.encode())
+            self.soc.close()
 
     def handleLogin(self, username, password):
         if DBHandler.login(username, password) is True:
             self.soc.send(Protocols.GOOD.encode())
             DBHandler.log(username, Protocols.ACTION_LOGIN, username + Protocols.CONTENT_LOGIN)
+            self.soc.close()
         else:
             self.soc.send(Protocols.LOGIN_FAILED.encode())
+            self.soc.close()
 
     def handleUpload(self, username, fileNames):
         counter = 1
@@ -94,6 +98,7 @@ class Handler:
 
         print ("out of loops")
         self.soc.send(Protocols.GOOD.encode())  # approve that files were received"""
+        self.soc.close()
 
     def handleSendFileNames(self):
         names = Protocols.GOOD + "&&"
@@ -102,6 +107,7 @@ class Handler:
         names = names[0:-2]
         print(names)
         self.soc.send(names.encode())
+        self.soc.close()
 
     def handleDownload(self, username, fileName):
         self.soc.send(Protocols.GOOD.encode())
@@ -122,15 +128,19 @@ class Handler:
             else:
                 print("client didn't confirm")
             DBHandler.log(username, Protocols.ACTION_FILE_DOWNLOAD, fileName)
+            self.soc.close()
         except Exception as e:
             file.close()
+            self.soc.close()
             print(e)
 
     def handleWifiConfig(self, name, password):
         # TODO connect to wifi
+        self.soc.close()
         return
 
     def handleGetLogs(self):
         message = DBHandler.getLogs()
 
         self.soc.send(message.encode())
+        self.soc.close()

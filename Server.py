@@ -1,4 +1,5 @@
 import socket
+import threading
 from IHome2.Handler import Handler
 
 
@@ -16,9 +17,8 @@ def main():
 
             command = client_soc.recv(1024).decode('UTF-8')
             handler = Handler(client_soc)
-            handler.parseCommandAndHandle(command)
+            threading._start_new_thread(handler.parseCommandAndHandle, (command,))
 
-            client_soc.close()
         except Exception as e:
             print(e)
             break
