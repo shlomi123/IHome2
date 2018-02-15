@@ -1,12 +1,10 @@
 import sqlite3
-from IHome2.Protocols import Protocols
 import os
-import socket
+from IHome2.Protocols import Protocols
+from IHome2.DBHandler import DBHandler
 
 
 class Handler:
-    soc = 0
-
     def __init__(self, client_soc):
         self.soc = client_soc
 
@@ -22,118 +20,96 @@ class Handler:
         elif messageCode == Protocols.REGISTER:
             self.handleRegister(parsedCommand[1], parsedCommand[2], parsedCommand[3])
 
-        #  [0] - Protocol code, [1] - file names
+        #  [0] - Protocol code, [1] - username, [2] - file names
         elif messageCode == Protocols.UPLOAD:
-            self.handleUpload(parsedCommand[1])
+            self.handleUpload(parsedCommand[1], parsedCommand[2])
 
         #  [0] - Protocol code
         elif messageCode == Protocols.SEND_FILES:
             self.handleSendFileNames()
 
-        #  [0] - Protocol code, [1] - file name
+        #  [0] - Protocol code, [1] - username, [2] - file name
         elif messageCode == Protocols.DOWNLOAD:
-            self.handleDownload(parsedCommand[1])
+            self.handleDownload(parsedCommand[1], parsedCommand[2])
 
         #  [0] - Protocol code, [1] - wifi name, [2] - wifi password
         elif messageCode == Protocols.WIFI_CONFIG:
-            self.handleWifiConfig()
+            self.handleWifiConfig(parsedCommand[1], parsedCommand[2])
+
+        #  [0] - Protocol code
+        elif messageCode == Protocols.GET_LOGS:
+            self.handleGetLogs()
 
     def handleRegister(self, username, password, code):
         if code != ('abcd'):  # If code doesn't match
             self.soc.send(Protocols.WRONG_CODE.encode())
             return
 
-        con = sqlite3.connect('Database.db')  # Open the database
-        c = con.cursor()
-
-        # Check if user exists
-        c.execute("SELECT count(*) FROM users WHERE username=?", (username,))
-        count = c.fetchone()[0]
-
-        if count > 0:  # If the username is taken
+        if DBHandler.register(username, password) is True:
+            self.soc.send(Protocols.GOOD.encode())
+            DBHandler.log(username, Protocols.ACTION_SIGNUP, username + Protocols.CONTENT_SIGNUP)
+        else:
             self.soc.send(Protocols.USERNAME_EXISTS.encode())
-            print('Username is taken')
-            return
-
-        # Insert user to database
-        c.execute("INSERT INTO users VALUES (? ,?, ?)", (None, username, password))
-        con.commit()
-
-        print('INSERTED')
-        self.soc.send(Protocols.GOOD.encode())
-        return
 
     def handleLogin(self, username, password):
-        con = sqlite3.connect('Database.db')  ## Open the database
-        c = con.cursor()
-
-        ## Check if username and password match
-        c.execute("SELECT count(*) FROM users WHERE username=? AND password=?", (username, password))
-        count = c.fetchone()[0]
-
-        if count > 0:  ## If the values match
-            print('Login successful')
+        if DBHandler.login(username, password) is True:
             self.soc.send(Protocols.GOOD.encode())
-            return
+            DBHandler.log(username, Protocols.ACTION_LOGIN, username + Protocols.CONTENT_LOGIN)
+        else:
+            self.soc.send(Protocols.LOGIN_FAILED.encode())
 
-        print('Wrong username or password')
-        self.soc.send(Protocols.LOGIN_FAILED.encode())
-        return
-
-    def handleUpload(self, fileNames):
+    def handleUpload(self, username, fileNames):
         counter = 1
         parsedFileNames = fileNames.split('&&')
-        print (parsedFileNames)
+        print(parsedFileNames)
         self.soc.send(Protocols.GOOD.encode())  # approve that file names were received
 
         # start receiving files from client
         self.soc.settimeout(5)
         for fileName in parsedFileNames:
             file = open("files\\" + fileName, 'wb')
-            print ("in loop " + str(counter))
+            print("in loop " + str(counter))
             counter = counter + 1
+            DBHandler.log(username, Protocols.ACTION_FILE_UPLOAD, fileName)
 
             while True:
                 try:
                     data = self.soc.recv(1024)
-                    print (data)
+                    print(data)
                     code = data[-3:]
-                    print (code)
+                    print(code)
                     if code == b'200':
                         data = data[0:-3]
                         file.write(data)
-                        print ("end")
+                        print("end")
                         self.soc.send(Protocols.GOOD.encode())
                         break
 
                     file.write(data)
                 except Exception as e:
-                    print (e)
+                    print(e)
                     break
 
             file.close()
 
         print ("out of loops")
         self.soc.send(Protocols.GOOD.encode())  # approve that files were received"""
-        return
 
     def handleSendFileNames(self):
         names = Protocols.GOOD + "&&"
         for i in os.listdir("files\\"):
             names = names + i + "&&"
         names = names[0:-2]
-        print (names)
+        print(names)
         self.soc.send(names.encode())
 
-        return
-
-    def handleDownload(self, fileName):
+    def handleDownload(self, username, fileName):
         self.soc.send(Protocols.GOOD.encode())
         print(fileName)
         ans = self.soc.recv(1024).decode('UTF-8')
         # TODO finish sending file to client
         try:
-            if ans == "200":
+            if ans == Protocols.GOOD:
                 print(ans)
                 file = open("files\\" + fileName, 'rb')
 
@@ -145,15 +121,16 @@ class Handler:
                 file.close()
             else:
                 print("client didn't confirm")
+            DBHandler.log(username, Protocols.ACTION_FILE_DOWNLOAD, fileName)
         except Exception as e:
             file.close()
-            print (e)
+            print(e)
 
+    def handleWifiConfig(self, name, password):
+        # TODO connect to wifi
         return
 
-    def handleWifiConfig(self):
-        hostname = socket.gethostname()
-        ip = socket.gethostbyname(hostname)
+    def handleGetLogs(self):
+        message = DBHandler.getLogs()
 
-        self.soc.send(str(ip).encode())
-        return
+        self.soc.send(message.encode())
