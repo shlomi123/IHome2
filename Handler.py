@@ -1,7 +1,6 @@
-import _thread
 import os
-from IHome2.Protocols import Protocols
-from IHome2.DBHandler import DBHandler
+from Protocols import Protocols
+from DBHandler import DBHandler
 
 
 class Handler():
@@ -16,7 +15,7 @@ class Handler():
         if messageCode == Protocols.LOG_IN:
             self.handleLogin(parsedCommand[1], parsedCommand[2])
 
-        #  [0] - Protocol code, [1] - Username, [2] - Password, [3] - code
+        #  [0] - Protocol code, [1] - username, [2] - Password, [3] - code
         elif messageCode == Protocols.REGISTER:
             self.handleRegister(parsedCommand[1], parsedCommand[2], parsedCommand[3])
 
@@ -65,38 +64,38 @@ class Handler():
     def handleUpload(self, username, fileNames):
         counter = 1
         parsedFileNames = fileNames.split('&&')
-        print(parsedFileNames)
+        print parsedFileNames
         self.soc.send(Protocols.GOOD.encode())  # approve that file names were received
 
         # start receiving files from client
         self.soc.settimeout(5)
         for fileName in parsedFileNames:
             file = open("files\\" + fileName, 'wb')
-            print("in loop " + str(counter))
+            print "in loop " + str(counter)
             counter = counter + 1
             DBHandler.log(username, Protocols.ACTION_FILE_UPLOAD, fileName)
 
             while True:
                 try:
                     data = self.soc.recv(1024)
-                    print(data)
+                    print data
                     code = data[-3:]
-                    print(code)
+                    print code
                     if code == b'200':
                         data = data[0:-3]
                         file.write(data)
-                        print("end")
+                        print "end"
                         self.soc.send(Protocols.GOOD.encode())
                         break
 
                     file.write(data)
                 except Exception as e:
-                    print(e)
+                    print e
                     break
 
             file.close()
 
-        print ("out of loops")
+        print "out of loops"
         self.soc.send(Protocols.GOOD.encode())  # approve that files were received"""
         self.soc.close()
 
@@ -105,34 +104,33 @@ class Handler():
         for i in os.listdir("files\\"):
             names = names + i + "&&"
         names = names[0:-2]
-        print(names)
+        print names
         self.soc.send(names.encode())
         self.soc.close()
 
     def handleDownload(self, username, fileName):
         self.soc.send(Protocols.GOOD.encode())
-        print(fileName)
+        print fileName
         ans = self.soc.recv(1024).decode('UTF-8')
         # TODO finish sending file to client
         try:
             if ans == Protocols.GOOD:
-                print(ans)
+                print ans
                 file = open("files\\" + fileName, 'rb')
 
                 bytes = file.read(1024)
                 while (bytes):
                     self.soc.send(bytes)
                     bytes = file.read(1024)
-                    print(bytes)
+                    print bytes
                 file.close()
             else:
-                print("client didn't confirm")
+                print "client didn't confirm"
             DBHandler.log(username, Protocols.ACTION_FILE_DOWNLOAD, fileName)
             self.soc.close()
         except Exception as e:
-            file.close()
             self.soc.close()
-            print(e)
+            print e
 
     def handleWifiConfig(self, name, password):
         # TODO connect to wifi

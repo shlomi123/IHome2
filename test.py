@@ -10,7 +10,7 @@ soc = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 server_address = ('localhost', 1618)
 soc.connect(server_address)
 
-print("connected to server")
+print "connected to server"
 
 code = "106"
 
@@ -18,4 +18,4 @@ soc.send(code.encode())
 
 ret = soc.recv(1024)
 
-print(ret.decode())
+print ret.decode()

@@ -6,7 +6,7 @@ class DBHandler:
     @staticmethod
     def log(username, action, content):
         conn = sqlite3.connect("log.db")
-        date = datetime.datetime.now().strftime("%d-%m-%y")
+        date = datetime.datetime.now().strftime("%d-%m-%y %H:%M")
         conn.execute("INSERT INTO LOG VALUES(?,?,?,?,?)", (None, username, date, action, content))
         conn.commit()
 
@@ -20,13 +20,13 @@ class DBHandler:
         count = c.fetchone()[0]
 
         if count > 0:  # If the username is taken
-            print('Username is taken')
+            print 'Username is taken'
             return False
 
         # Insert user to database
         c.execute("INSERT INTO users VALUES (? ,?, ?)", (None, username, password))
         con.commit()
-        print('Register fail')
+        print 'Register fail'
         return True
 
     @staticmethod
@@ -39,10 +39,10 @@ class DBHandler:
         count = c.fetchone()[0]
 
         if count > 0:  # If the values match
-            print('Login successful')
+            print 'Login successful'
             return True
         else:
-            print('Login failed')
+            print 'Login failed'
 
     @staticmethod
     def getLogs():
